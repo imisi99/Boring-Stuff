@@ -1,18 +1,26 @@
-# x = int(input('how many cats do you have? '))
-# CatLists = []
+# Naming cats
+x = int(input('how many cats do you have? '))
+CatLists = []
 
-# for i in range (x):
-#     name = input(f'What is the name of cat{len(CatLists) + 1} ')
-#     CatLists.append(name)
+for i in range (x):
+    name = input(f'What is the name of cat{len(CatLists) + 1} ')
+    CatLists.append(name)
 
-# print('The cat names are:')
-# for i in CatLists:
-#     print(' '+ i)
+print('The cat names are:')
+for i in CatLists:
+    print(' '+ i)
 
 
-# imisi = ['tall', 'fair', ['reading novels', 'solving problems with programming']]
-# height, complexion, hobbies = imisi
-# print(height)
-# print(complexion)
-# print(hobbies)
+def seperate(my_list):
+    new_value = ''
+    for i in range(len(my_list) - 1):
+        new_value = new_value + ' ' + f'{my_list[i]}'
+        if i == (len(my_list) - 2):
+            new_value = new_value + f' and {my_list[-1]}'
+    new_value.strip("")
+    print(new_value)
+
+
+tryout = ['david', 'daniel', 'samuel', 'skinny', 'miracle']
+seperate(tryout)
 

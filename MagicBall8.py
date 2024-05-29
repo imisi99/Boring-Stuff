@@ -14,7 +14,7 @@ message = [
 ]
 
 while True:
-    question = input('What question do you have for the wise one? ').lower()
+    question = input('What question do you have for the wise one? ').lower().strip()
     if question == "":
         response = 'Bruh be serious!'
     elif question == 'nothing':
