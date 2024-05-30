@@ -1,2 +1,2 @@
 # Boring-Stuff
-These are all the projects that were given in automating the boring stuff with python
+These are all the projects that were done in automating the boring stuff with python
