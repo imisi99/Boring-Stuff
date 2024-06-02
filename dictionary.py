@@ -1,5 +1,5 @@
 import pprint
-birthday = {'Imisioluwa' : 'Jan 32', 'Adeleke' : 'May 30', 'Emmanuel' : 'Feb 25'}
+birthday = {'Imisioluwa': 'Jan 32', 'Precious': 'May 30', 'Emmanuel': 'Feb 25'}
 
 while True:
     name = input('Whose birthday date do we need(enter blank to exit): ')
@@ -20,7 +20,8 @@ while True:
             continue
 
 
-message = 'There was once a time where i was lost and without hope, But i am glad that i pushed through and made it today and that time is evry single fucking day!'
+message = ('There was once a time where i was lost and without hope, But i am glad that i pushed through and made it '
+           'today and that time is every single fucking day!')
 count = {}
 
 for char in message:
