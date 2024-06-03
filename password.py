@@ -17,14 +17,12 @@ if account in Passwords:
         print(f'Password for {account} copied to clipboard')
     else:
         print('There is no password associated with this account')
-        create = input('Enter a password for this account')
-        Passwords[account] = create
+        print('A dummy password: password123. has been used')
+        Passwords[account] = 'password123.'
         print('Password stored successfully')
         pyperclip.copy(Passwords[account])
 else:
-    print(f'There is no account {account}')
-    create = input('Would you like to create a password for the account(Y/N)').lower()
-    if create == 'y':
-        Passwords[account] = ''
-    else:
-        sys.exit()
+    print(f'There is no account: {account}')
+    print('an account will be created using the account name you have inputted')
+    Passwords[account] = ''
+    sys.exit()

@@ -9,7 +9,7 @@ message = [
     'Ask again later',
     'Concentrate and ask again',
     'My reply is no',
-    'Outllook no so good',
+    'Outlook no so good',
     'Very doubtful'
 ]
 

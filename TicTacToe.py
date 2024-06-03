@@ -19,7 +19,6 @@ while 0 <= i <= 9:
     if i == 0:
         draw_board(my_board)
         break
-    print(i)
     time.sleep(1)
     draw_board(my_board)
     print('Available slots: ')

@@ -1,4 +1,3 @@
-import pprint
 birthday = {'Imisioluwa': 'Jan 32', 'Precious': 'May 30', 'Emmanuel': 'Feb 25'}
 
 while True:
@@ -18,14 +17,3 @@ while True:
             print(f'{birthday[name]} is the birthday of {name}')
         else:
             continue
-
-
-message = ('There was once a time where i was lost and without hope, But i am glad that i pushed through and made it '
-           'today and that time is every single fucking day!')
-count = {}
-
-for char in message:
-    count.setdefault(char, 0)
-    count[char] += 1
-
-print(pprint.pformat(count))
