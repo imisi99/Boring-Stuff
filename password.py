@@ -2,8 +2,8 @@
 import pyperclip
 import sys
 
-Passwords = {'email': '',
-             'github': ''}
+Passwords = {'email': 'SecurePassword123',
+             'github': 'Secr3tPassword',}
 
 if len(sys.argv) < 2:
     print('Usage: python password.py [account] - copy account password')
