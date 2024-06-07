@@ -13,9 +13,7 @@ def print_table(table):
             if length > max_length[index]:
                 max_length[index] = length
     for row in zip(*table):
-        print(list(zip(*table)))
-        print(row)
-        # print(' '.join([data.rjust(max_length[index]) for index, data in enumerate(row)]))
+        print(' '.join([data.rjust(max_length[index]) for index, data in enumerate(row)]))
 
 
 print_table(tableData)
