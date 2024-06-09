@@ -1,6 +1,6 @@
 import re
 
-text = open('text.txt', 'r+')
+text = open('text.txt', 'r')
 text_content = text.read()
 
 mad_libs = re.compile(r'ADJECTIVE|NOUN|VERB')
@@ -17,6 +17,3 @@ for i in change:
         text_content = text_content.replace(f'NOUN', f'{enter}', 1)
 
 print(text_content)
-
-text_content = ('There was once a ADJECTIVE boy that felt so motivated and tried to VERB but then hec VERB on a'
-                ' NOUN then cause a turmoil')
