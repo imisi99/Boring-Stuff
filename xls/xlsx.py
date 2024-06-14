@@ -2,8 +2,9 @@ import pprint
 
 import openpyxl
 print('Opening Document')
-wb = openpyxl.load_workbook('sanfrancisco.xlsx')
-sheet = wb['Sheet1']
+wb = openpyxl.load_workbook('censuspopdata.xlsx')
+sheet = wb['Population by Census Tract']
+sheet.freeze_panes = 'A2'
 county_data = {}
 print('Processing calculation')
 for row in range(2, sheet.max_row + 1):
