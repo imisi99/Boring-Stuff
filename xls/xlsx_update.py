@@ -16,4 +16,4 @@ for row in range(2, sheet.max_row + 1):
         print(f'Updating {produce_name}')
         sheet.cell(row=row, column=2).value = Price_update[produce_name]
 
-file.save('updatedsales.xlsx')
+file.save('updated_sales.xlsx')
