@@ -1,6 +1,6 @@
 from random import randint
 import openpyxl
-from openpyxl.chart import BarChart, Reference
+from openpyxl.chart import BarChart, Reference, PieChart
 
 
 file = openpyxl.Workbook()
