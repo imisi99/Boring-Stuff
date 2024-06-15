@@ -20,6 +20,7 @@ for file in encrypted_files:
     file_obj.decrypt(password)
 
     try:
+        print(f'Decrypting file {file}')
         for pages in range(len(file_obj.pages)):
             file_page = file_obj.pages[pages]
             writer.add_page(file_page)

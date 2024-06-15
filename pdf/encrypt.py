@@ -23,6 +23,7 @@ for file in pdf_files:
     password = input(f'Enter a password to use encrypt the file {file}: ')
     writer.encrypt(password)
 
+    print(f'Encrypting file {file}')
     save_file = open(f'encrypted_{file}', 'wb')
     writer.write(save_file)
     save_file.close()
