@@ -17,4 +17,3 @@ else:
     text = open('timer.txt', 'w')
     text.write('Get to work!')
     subprocess.Popen(['start', 'timer.txt'], shell=True)
-    print('File has been created')

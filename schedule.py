@@ -3,15 +3,18 @@ import time
 import datetime
 
 
-def print_name():
+def print_days(birthday):
     time.sleep(5)
-    print('My name is Imisioluwa')
+    print(f'You have {birthday} till your next birthday')
 
 
-thread = threading.Thread(target=print_name)
+year = int(input('Enter the year: '))
+month = int(input('Enter the month: '))
+days = int(input('Enter the day: '))
+
+next_birthday = datetime.datetime(year=year, month=month, day=days, hour=0, minute=0, second=0)
+day = next_birthday - datetime.datetime.now()
+
+thread = threading.Thread(target=print_days, args=[day])
 thread.start()
-print('Done')
-
-my_next_birthday = datetime.datetime(year=2025, month=1, day=24, hour=0, minute=0, second=0)
-
-print(my_next_birthday - datetime.datetime.now())
+print('Processing')
