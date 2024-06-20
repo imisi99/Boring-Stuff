@@ -1,9 +1,10 @@
+# this is a timer program that alerts you by opening a file when done
 import subprocess
 import sys
 import time
 
 if len(sys.argv) < 2:
-    print('No input for timer')
+    print('No input for timer, add timer in command line arg')
     sys.exit()
 
 else:

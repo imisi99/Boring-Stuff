@@ -2,6 +2,8 @@ import threading
 import time
 import datetime
 
+print('This is a birthday calculator to find the amount of days till your next birthday')
+
 
 def print_days(birthday):
     time.sleep(5)
